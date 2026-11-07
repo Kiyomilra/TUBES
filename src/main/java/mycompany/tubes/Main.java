@@ -15,14 +15,17 @@ import mycompany.view.MainFrame;
 import javax.swing.*;
 import mycompany.Interface.KategoriInterface;
 import mycompany.Interface.PengeluaranInterface;
+import mycompany.db.Database;
+import mycompany.db.KoneksiDatabase;
 
 public class Main {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
-                KategoriInterface rk = new KategoriIMP();
-                PengeluaranInterface rp = new PengeluaranIMP();
+                Database koneksi = new KoneksiDatabase();
+                KategoriInterface rk = new KategoriIMP(koneksi);
+                PengeluaranInterface rp = new PengeluaranIMP(koneksi);
 
                 LayananKategori lk = new LayananKategori(rk);
                 LayananPengeluaran lp = new LayananPengeluaran(rp);
