@@ -4,7 +4,6 @@
  */
 package mycompany.Interface.Implementasi;
 
-import mycompany.db.KoneksiDatabase;
 import mycompany.model.Pengeluaran;
 import mycompany.Interface.PengeluaranInterface;
 import java.sql.*;

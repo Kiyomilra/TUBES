@@ -6,7 +6,6 @@ package mycompany.Interface.Implementasi;
 
 import mycompany.model.Kategori;
 import mycompany.Interface.KategoriInterface;
-import mycompany.db.KoneksiDatabase;
 
 import java.sql.*;
 import java.util.ArrayList;

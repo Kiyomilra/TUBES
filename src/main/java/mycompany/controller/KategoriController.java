@@ -6,7 +6,7 @@ package mycompany.controller;
 
 import java.util.List;
 import mycompany.model.Kategori;
-import mycompany.service.LayananKategori;
+import mycompany.service.LayananKategoriInterface;
 
 /**
  *
@@ -14,9 +14,9 @@ import mycompany.service.LayananKategori;
  */
 public class KategoriController {
 
-    private final LayananKategori layanan;
+    private final LayananKategoriInterface layanan;
 
-    public KategoriController(LayananKategori l) {
+    public KategoriController(LayananKategoriInterface l) {
         layanan = l;
     }
 

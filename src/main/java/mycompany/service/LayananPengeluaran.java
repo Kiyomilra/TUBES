@@ -6,6 +6,7 @@ package mycompany.service;
 
 import mycompany.model.Pengeluaran;
 import mycompany.Interface.PengeluaranInterface;
+import mycompany.service.LayananPengeluaranInterface;
 
 /**
  *
@@ -13,7 +14,7 @@ import mycompany.Interface.PengeluaranInterface;
  */
 import java.util.List;
 
-public class LayananPengeluaran {
+public class LayananPengeluaran implements LayananPengeluaranInterface {
 
     private final PengeluaranInterface repo;
 

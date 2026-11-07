@@ -5,6 +5,7 @@
 package mycompany.service;
 
 import mycompany.model.Kategori;
+import mycompany.service.LayananKategoriInterface;
 import mycompany.Interface.KategoriInterface;
 
 /**
@@ -13,7 +14,7 @@ import mycompany.Interface.KategoriInterface;
  */
 import java.util.List;
 
-public class LayananKategori {
+public class LayananKategori implements LayananKategoriInterface {
 
     private final KategoriInterface repo;
 
